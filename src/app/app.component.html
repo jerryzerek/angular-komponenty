@@ -1,0 +1,12 @@
+<div>
+  <div class="container">
+    <app-add-task (eventTask)="retrieveTask($event)" ></app-add-task>
+  </div>
+
+  <div class="container">
+    <app-todo-task [tasks]="tasks" (doneTask)="addToDonetaskList($event)" (removedTask)="deleteTask($event)"></app-todo-task>
+    <div>
+      <app-done-task [doneTasks]="doneTasks"></app-done-task>
+    </div>
+  </div>
+</div>
