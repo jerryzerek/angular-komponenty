@@ -3,9 +3,9 @@
     <div *ngFor="let task of tasks; let i = index">
       <ul>
         <li>
-          {{task}}
-          <button (click)="removeTask(i)">Usun</button>
-          <button (click)="addToDoneTaskList(i)">Zrobione</button>
+          {{task.name}}
+          <button (click)="removeTask(task)">Usun</button>
+          <button (click)="addToDoneTaskList(task)">Zrobione</button>
         </li>
       </ul>
     </div>
